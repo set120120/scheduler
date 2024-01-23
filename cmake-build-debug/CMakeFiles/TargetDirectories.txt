@@ -1,0 +1,3 @@
+/home/cmpe230/CLionProjects/untitled5/cmake-build-debug/CMakeFiles/untitled5.dir
+/home/cmpe230/CLionProjects/untitled5/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/cmpe230/CLionProjects/untitled5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
