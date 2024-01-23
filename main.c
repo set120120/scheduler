@@ -1,3 +1,8 @@
+/*
+This code, written by SET, simulates a preemptive priority scheduler.
+*/
+
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -92,7 +97,7 @@ void sortProcesses(struct process *arr, size_t size) {
 }
 
 // After sorting by name, there may be a problem like this:
-// If process 1 comes first, 2 comes in 30ms, 4 comes in 20ms, 5 comes in 10 ms, and the priority of all of these processes is the same (def4.txt).
+// If process 1 comes first, 2 comes in 30ms, 4 comes in 20ms, 5 comes in 10 ms, and the priority of all of these processes is the same.
 // Since the first instruction of Process 1 takes longer than 30ms, all remaining processes must be activated when this instruction is finished.
 // Since they are activated from the beginning to the end of the array, process 2 was activated before process 4 and 5.
 // This is something I don't want because 5 and 4 came before 2. I prevent this with this function.
@@ -180,7 +185,7 @@ bool checkAllFinished(const struct process *arr, size_t size) {
 int main() {
 
 /* *************************** INITIALIZATION PART **************************** */
-// I know it is not absolutely a clean code :( but I wrote like this. I'm sorry for disturbing your eye health. :(
+// I know it is not absolutely a clean code but I wrote like this. I'm sorry for disturbing your eye health.
     struct instruction instr1;
     struct instruction instr2;
     struct instruction instr3;
